@@ -7,11 +7,11 @@ pipeline {
                 sh './gradlew build --no-daemon'
             }
         }
-        stage('Test'){
-            steps {
-                sh './gradlew check'
-            }
-        }
+        // stage('Test'){
+        //     steps {
+        //         sh './gradlew check'
+        //     }
+        // }
     }
     post {
         always {
